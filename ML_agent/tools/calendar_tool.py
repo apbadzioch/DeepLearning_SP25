@@ -1,5 +1,9 @@
 # tools/calendar_tool.py
+# Author: Andrew Badzioch
+# Purpose: Simulates a calendar scheduling tool by managing a list of local events
+# and checking for conflicts.
 
+ 
 import datetime
 import logging
 

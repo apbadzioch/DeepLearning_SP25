@@ -1,4 +1,8 @@
 # main.py
+# Author: Andrew Badzioch
+# Purpose: Entry point for the Process Automation Agent
+# Handles user input, tool routing, feedback tracking, and interaction loop
+#  
 
 from tools.calendar_tool import CalendarTool
 from tools.reminder_tool import ReminderTool
@@ -6,8 +10,14 @@ from rl.feedback import FeedbackManager
 from safety.validation import validate_input
 
 def main():
+    '''
+    Launches the main user-agent interaction loop.
+    Interprets user intent, validates input, calls appropriate tool,
+    and recordes feedback after each action.
+    '''
     print("🤖 Hello, I am your AI Process Automation Assistant.")
     
+    # Initialize tools and feedback manager
     calendar_tool = CalendarTool()
     reminder_tool = ReminderTool()
     feedback_manager = FeedbackManager()

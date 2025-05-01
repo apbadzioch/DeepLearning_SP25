@@ -1,5 +1,7 @@
 # tools/reminder_tool.py
-
+# Author: Andrew Badzioch
+# Purpose: Simulates a reminder scheduling tool by logging reminders to memory.
+ 
 import datetime
 import logging
 
