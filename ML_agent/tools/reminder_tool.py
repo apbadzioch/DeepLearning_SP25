@@ -1,5 +1,5 @@
 # tools/reminder_tool.py
-# Author: Andrew Badzioch
+# Author: Epoch Explorers
 # Purpose: Simulates a reminder scheduling tool by logging reminders to memory.
  
 import datetime

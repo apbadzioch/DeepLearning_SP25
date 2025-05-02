@@ -1,5 +1,5 @@
 # main.py
-# Author: Andrew Badzioch
+# Author: Epoch Explorers
 # Purpose: Entry point for the Process Automation Agent
 # Handles user input, tool routing, feedback tracking, and interaction loop
 #  
