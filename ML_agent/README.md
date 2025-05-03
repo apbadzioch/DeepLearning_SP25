@@ -8,7 +8,9 @@ This AI agent is designed to streamline repetitive administrative tasks. It auto
 **Team Name:** Epoch Explorers
 **Team Members:**
 - Andrew Badzioch
-
+- Naomi Beruman
+- Eduardo Cabrera-lopez
+- Monica Joya
 ---
 ## Features
 

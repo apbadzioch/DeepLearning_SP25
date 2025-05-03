@@ -11,12 +11,17 @@ class CalendarTool:
     def __init__(self):
         self.calendar = []  # Simulated list of calendar events
 
+    def events_overlap(self, start1, end1, start2, end2):
+        return max(start1, start2) < min(end1, end2)
+    
     def schedule_event(self, title, date_str, time_str, duration_minutes=30):
         try:
             # Parse date and time
             event_datetime = datetime.datetime.strptime(f"{date_str} {time_str}", "%Y-%m-%d %H:%M")
             end_time = event_datetime + datetime.timedelta(minutes=duration_minutes)
 
+            for existing in self.calendar:
+                existing_start = datetime.datetime.fromisoformat(existing["start"])
             # Simulated event creation
             event = {
                 "title": title,

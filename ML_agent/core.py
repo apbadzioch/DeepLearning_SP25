@@ -36,6 +36,8 @@ def main():
 
         # Naive logic routing (replace with LLM/Chain-of-Thought reasoning later)
         if "schedule" in user_input.lower():
+            use_google = input("Use Google Calender? (yes/no): ").strip().lower() ==  "yes"
+            select_calendar_tool = GoogleCalendarTool() if use_google else calendar_tool
             title = input("📅 Event title: ")
             date = input("📆 Date (YYYY-MM-DD): ")
             time = input("⏰ Time (HH:MM 24hr format): ")
@@ -45,6 +47,7 @@ def main():
             feedback_manager.record_action("schedule_event", response)
 
         elif "reminder" in user_input.lower():
+            
             recipient = input("📧 Recipient email or name: ")
             message = input("📝 Message: ")
             when = input("⏰ Time to send reminder (YYYY-MM-DD HH:MM): ")
