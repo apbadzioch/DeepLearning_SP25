@@ -5,6 +5,7 @@
 #  
 
 from tools.calendar_tool import CalendarTool
+from tools.GoogleCalendar import GoogleCalendarTool
 from tools.reminder_tool import ReminderTool
 from rl.feedback import FeedbackManager
 from safety.validation import validate_input
