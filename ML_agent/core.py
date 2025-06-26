@@ -10,6 +10,18 @@ from tools.reminder_tool import ReminderTool
 from rl.feedback import FeedbackManager
 from safety.validation import validate_input
 
+# Initialize tools and feedback manager
+calendar_tool = CalendarTool()
+google_calender_tool = GoogleCalendarTool()
+reminder_tool = ReminderTool()
+feedback_manager = FeedbackManager()
+
+
+def handle_user_input(user_input, extra_data=None):
+    
+
+
+
 def main():
     '''
     Launches the main user-agent interaction loop.
@@ -18,10 +30,7 @@ def main():
     '''
     print("🤖 Hello, I am your AI Process Automation Assistant.")
     
-    # Initialize tools and feedback manager
-    calendar_tool = CalendarTool()
-    reminder_tool = ReminderTool()
-    feedback_manager = FeedbackManager()
+
 
     while True:
         user_input = input("\nWhat would you like help with? (type 'exit' to quit): ").strip()
